@@ -1,7 +1,7 @@
 {% if active_request_list %}
   <ul>
-  {% for request.request_timestamp in active_request_list %}
-    <li><a href="/requests/{{request.pk}}/">{{request.pk}}</a>
+  {% for request.name in active_request_list %}
+    <li><a href="/requests/{{request.name}}/">{{request.name}}</a>
 </li>
   {% endfor %}
   </ul>

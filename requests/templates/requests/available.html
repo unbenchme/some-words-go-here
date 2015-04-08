@@ -1,0 +1,10 @@
+{% if all_available_list %}
+  <ul>
+  {% for Avaiable.username in all_categories_list %}
+    <li><a href="/requests/{{Available.username}}/">{{Available.username}}</a>
+</li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No users are available.</p>
+{% endif %}
